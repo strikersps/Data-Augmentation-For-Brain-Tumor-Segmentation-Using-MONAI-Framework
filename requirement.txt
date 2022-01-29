@@ -1,0 +1,7 @@
+nibabel
+nilearn
+SimpleITK
+sklearn
+plotly
+monai
+tensorboard
