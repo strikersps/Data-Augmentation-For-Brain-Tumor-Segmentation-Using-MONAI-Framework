@@ -16,10 +16,10 @@ protocols from various institutions/organisations with different MRI scanners wh
 <img src="https://github.com/strikersps/Data-Augmentation-For-Brain-Tumor-Segmentation-Using-MONAI-Framework/blob/main/images/Brain-MRI-Different-Representation.png" alt="Image" style="display: block; margin: 0 auto" />
 
 - Multi-modal brain MRI scans consists of maily four different representations as shown in the above exhibit:
-  - Native T1-Weighted Scan (T1)
-  - Post-Contrast T1-Weighted Scan (T1-Gd)
-  - Native T2-Weighted Scan (T2)
-  - T2 Fluid Attenuated Inversion Recovery (FLAIR)  
+  - Native T1-Weighted Scan (T1) `[D]`
+  - Post-Contrast T1-Weighted Scan (T1-Gd) `[C]`
+  - Native T2-Weighted Scan (T2) `[A]`
+  - T2 Fluid Attenuated Inversion Recovery (FLAIR) `[B]`  
  which plays a pivotal role because it provide different set of information through those four representations which is crucial to understand different tissue intrinsic properties, area of tumor spread and growth like in T1-Gd (Gadolinium) the enhancing tumor (ET) part shows hyper-intensity as compared to its T1 counterpart and when compared to white matter in T1-Gd (Gadolinium).
 
 - The BraTS-2020 dataset is divided into training, validation and testing dataset. The training dataset consists a total of 369 combined cases of low and high grade glioma's and dataset is in-balanced as `79.40%` of the observations belongs to high grade glioma (HGG) and the rest `20.6%` belongs to low grade glioma (LGG).
