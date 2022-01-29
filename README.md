@@ -12,13 +12,16 @@ For this work we have used BraTS-2020 dataset which consists of images and segme
 support from MICCAI and the aim of the BraTS challenge is to build and evaluate state of the art supervised learners for the segmentation of brain tumors and survival prediction of patients.  
 - The dataset is multi-modal and all the Brain-MRI scans and segmentation masks are available in `NifTI` format (`nii.gz` or `nii`) and were obtained with different clinical
 protocols from various institutions/organisations with different MRI scanners which inherently makes the dataset heterogeneous in nature and is pre-processed i.e. co-registered to the same anatomical template, interpolated to the same resolution (`1mm3`) and skull-stripped.
+
+![Multi-Modal Brain MRI Scans](https://github.com/strikersps/Data-Augmentation-For-Brain-Tumor-Segmentation-Using-MONAI-Framework/blob/main/images/Brain-MRI-Different-Representation.png)
+
 - Multi-modal brain MRI scans consists of maily four different representations:
   - Native T1-Weighted Scan (T1)
   - Post-Contrast T1-Weighted Scan (T1-Gd)
   - Native T2-Weighted Scan (T2)
   - T2 Fluid Attenuated Inversion Recovery (FLAIR)
  which plays a pivotal role because it provide different set of information through those four representations which is crucial to understand different tissue intrinsic properties, area of tumor spread and growth like in T1-Gd (Gadolinium) the enhancing tumor (ET) part shows hyper-intensity as compared to its T1 counterpart and when compared to white matter in T1-Gd (Gadolinium).
-- The dataset is divided into training/validation and testing where only for training data we are provided with expert annotated segmentation masks which represent different tumor sub-regions and are labeled numerically as defined in the following table:
+- The dataset is divided into training/validation and testing where only for training data we are provided with expert annotated segmentation masks which represent different tumor sub-regions and are labeled numerically as defined in the following table and figure:
 
   |Sr. No| Tumor Sub-Region/Mask Name | Mask Label|
   |:----:|:--------------------------:|:---------:|
@@ -27,7 +30,10 @@ protocols from various institutions/organisations with different MRI scanners wh
   | 3 | Peritumoral Edematous Tissue (ED) | 4 |
   | 4 | Background or White Matter | 0 |
 
+![Segmentation Masks of BraTS Training Dataset](https://github.com/strikersps/Data-Augmentation-For-Brain-Tumor-Segmentation-Using-MONAI-Framework/blob/main/images/Glioma-Subregions.jpeg)
+
 - The training dataset consists a total of 369 combined cases of low and high grade glioma's and distribution is im-balanced as `79.40%` of the observations belongs to high grade glioma (HGG) and the rest `20.6%` belongs to low grade glioma (LGG).
+![Training Data Distribution](https://github.com/strikersps/Data-Augmentation-For-Brain-Tumor-Segmentation-Using-MONAI-Framework/blob/main/images/Training-Data-Distrubution.png)
 - The validation dataset consits a total of 125 combined cases of low and high grade glioma's but we are not provided with the information about to which grade an observation belongs to and no segmentation masks are provided.
 - The testing dataset is only available to contestants of the annual BraTS competition once the training and validation phase is over.
 - As the dataset is large i.e. approximately 4.17 GB, you can access the dataset from
