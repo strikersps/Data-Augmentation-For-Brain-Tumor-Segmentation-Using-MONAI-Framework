@@ -48,3 +48,5 @@ protocols from various institutions/organisations with different MRI scanners wh
 
 - As the dataset is large ≈ 4.17 GB, you can access the dataset from
     Google Drive Link: https://drive.google.com/drive/folders/1hd8S54t9XJTwlg1o_2sDi2LhZOx4gUby?usp=sharing
+
+###### GNU General Public License v3.0
