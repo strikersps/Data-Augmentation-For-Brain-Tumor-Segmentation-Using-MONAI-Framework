@@ -1,7 +1,7 @@
 # Data Augmentation For Brain Tumor Segmentation Using MONAI Framework  
 
 ## 1. Introduction
-In 2020, worldwide 308,102 brain and nervous system cancer cases were reported out of which 251,329 deaths were registered i.e. ≈ 82.0% fatality rate and glioma was found to be one of most occurring brain tumors in the world and it can be both benign or metastatic. According to WHO, glioma can be categorised into 4 types which are Grade-I, Grade-II, Grade-III, and Grade-IV where Grade-I and Grade-II collectively represent Low Grade Glioma (LGG) and Grade-III and Grade-IV collectively represent High Grade Glioma (HGG).
+In 2020, worldwide 308,102 brain and nervous system cancer cases were reported out of which 251,329 deaths were registered i.e. ≈82.0% fatality rate and glioma was found to be one of most occurring brain tumors in the world and it can be both benign or metastatic. According to WHO, glioma can be categorised into 4 types which are Grade-I, Grade-II, Grade-III, and Grade-IV where Grade-I and Grade-II collectively represent Low Grade Glioma (LGG) and Grade-III and Grade-IV collectively represent High Grade Glioma (HGG).
 
 For this work we have used BraTS-2020 dataset which consists of images and segmentation masks (`nii.gz` format) for both low and high grade glioma's and the goal was to develop an efficient data augmentation pipeline using [MONAI](https://monai.io/) opensource domain specialised framework to artificially generate valid and sensible variances of structural brain MRI sequences i.e. T1, T1-Gd (Gadolinium), T2, FLAIR of high and low grade glioma's which will boost the generalisation capabilities of the deep learning model. The need for having a efficient data augmentation pipeline for the development of an automatic segmentation system raised because of the following reasons:
   - In healthcare we always deal with the problem of imbalanced datasets and limitation of expert annotated datasets which in itself is a challenge for applications of deep learning in healthcare.
@@ -19,13 +19,16 @@ protocols from various institutions/organisations with different MRI scanners wh
   - T2 Fluid Attenuated Inversion Recovery (FLAIR)
  which plays a pivotal role because it provide different set of information through those four representations which is crucial to understand different tissue intrinsic properties, area of tumor spread and growth like in T1-Gd (Gadolinium) the enhancing tumor (ET) part shows hyper-intensity as compared to its T1 counterpart and when compared to white matter in T1-Gd (Gadolinium).
 - The dataset is divided into training/validation and testing where only for training data we are provided with expert annotated segmentation masks which represent different tumor sub-regions and are labeled numerically as defined in the following table:
-  
+
   |Sr. No| Tumor Sub-Region/Mask Name | Mask Label|
-  |:------:|:-----------:|:-----------:|
+  |:----:|:--------------------------:|:---------:|
   | 1 | Necrotic and Non-Enhancing Part (NER) | 1 |
   | 2 | Enhancing Tumor (ET) | 2|
   | 3 | Peritumoral Edematous Tissue (ED) | 4 |
   | 4 | Background or White Matter | 0 |
+
 - The training dataset consists a total of 369 combined cases of low and high grade glioma's and distribution is im-balanced as `79.40%` of the observations belongs to high grade glioma (HGG) and the rest `20.6%` belongs to low grade glioma (LGG).
 - The validation dataset consits a total of 125 combined cases of low and high grade glioma's but we are not provided with the information about to which grade an observation belongs to and no segmentation masks are provided.
 - The testing dataset is only available to contestants of the annual BraTS competition once the training and validation phase is over.
+- As the dataset is large i.e. approximately 4.17 GB, you can access the dataset from
+    Google Drive Link: https://drive.google.com/drive/folders/1hd8S54t9XJTwlg1o_2sDi2LhZOx4gUby?usp=sharing
