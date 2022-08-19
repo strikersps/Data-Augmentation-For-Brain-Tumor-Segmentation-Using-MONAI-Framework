@@ -49,4 +49,20 @@ protocols from various institutions/organisations with different MRI scanners wh
 - As the dataset is large ≈ 4.17 GB, you can access the dataset from
     Google Drive Link: https://drive.google.com/drive/folders/1hd8S54t9XJTwlg1o_2sDi2LhZOx4gUby?usp=sharing
 
+## 3. Publications Based on the Work
+1. [**S. P. Sharma and N. Sampath, "Data Augmentation for Brain Tumor Segmentation using MONAI Framework," 2022 2nd International Conference on Intelligent Technologies (CONIT), 2022, pp. 1-8, doi: 10.1109/CONIT55038.2022.9847822.**](https://ieeexplore.ieee.org/document/9847822)
+
+```bibtex
+@inproceedings{9847822,
+	title        = {Data Augmentation for Brain Tumor Segmentation using MONAI Framework},
+	author       = {Sharma, Suraj Prakash and Sampath, Nalini},
+	year         = 2022,
+	booktitle    = {2022 2nd International Conference on Intelligent Technologies (CONIT)},
+	pages        = {1--8},
+	doi          = {10.1109/CONIT55038.2022.9847822}
+}
+```
+#### NOTE: To cite our work, please add the above block of code into your *.bib file in the latex environment and if you want to cite this repository, then please copy the respective style information (APA or BibTex) provided under `cite this repository` option as shown in the tutorial: https://github.blog/wp-content/uploads/2021/08/GitHub-citation-demo.gif
+
 ###### GNU General Public License v3.0
+[![License Badge](https://img.shields.io/github/license/strikersps/Data-Augmentation-For-Brain-Tumor-Segmentation-Using-MONAI-Framework?color=red&style=for-the-badge)](https://github.com/strikersps/Data-Augmentation-For-Brain-Tumor-Segmentation-Using-MONAI-Framework/blob/main/LICENSE)
