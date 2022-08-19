@@ -62,7 +62,7 @@ protocols from various institutions/organisations with different MRI scanners wh
 	doi          = {10.1109/CONIT55038.2022.9847822}
 }
 ```
-#### NOTE: To cite our work, please add the above block of code into your *.bib file in the latex environment and if you want to cite this repository, then please copy the respective style information (APA or BibTex) provided under `cite this repository` option as shown in the tutorial: https://github.blog/wp-content/uploads/2021/08/GitHub-citation-demo.gif
+##### NOTE: To cite our work, please add the above block of code into your *.bib file in the latex environment and if you want to cite this repository, then please copy the respective style information (APA or BibTex) provided under `cite this repository` option as shown in the tutorial: https://github.blog/wp-content/uploads/2021/08/GitHub-citation-demo.gif
 
 ###### GNU General Public License v3.0
 [![License Badge](https://img.shields.io/github/license/strikersps/Data-Augmentation-For-Brain-Tumor-Segmentation-Using-MONAI-Framework?color=red&style=for-the-badge)](https://github.com/strikersps/Data-Augmentation-For-Brain-Tumor-Segmentation-Using-MONAI-Framework/blob/main/LICENSE)
